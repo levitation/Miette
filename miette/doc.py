@@ -89,7 +89,7 @@ class DocReader(object):
             part = self.word_document.read(length)
             if not fc_f_compressed:
                 part = part.decode('utf-16')
-            data_buffer += part
+            data_buffer += str(part)
             self._position += len(part)
 
             if len(data_buffer) >= size:
