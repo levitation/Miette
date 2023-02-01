@@ -81,7 +81,7 @@ class DocReader(object):
                 length = size - len(data_buffer)
 
             if fc_f_compressed:
-                fc_fc /= 2
+                fc_fc //= 2
             else:
                 length *= 2
 
